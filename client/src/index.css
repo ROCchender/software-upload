@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --dark-color: #343a40;
+  --light-color: #f4f4f4;
+  --danger-color: #e74c3c;
+  --success-color: #28a745;
+}
+
+main {
+  min-height: 80vh;
+}
+
+/* 标题样式 */
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+
+h2 {
+  font-size: 1.4rem;
+  padding: 0.5rem 0;
+}
+
+h3 {
+  padding: 1rem 0;
+}
+
+/* 评分组件样式 */
+.rating span {
+  margin: 0.1rem;
+}
+
+/* 表格样式 */
+table th,
+table td {
+  vertical-align: middle;
+}
+
+/* 卡片样式 */
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+}
+
+.book-card {
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 导航栏样式 */
+.navbar-brand {
+  font-weight: bold;
+}
+
+/* 按钮样式 */
+.btn-block {
+  width: 100%;
+}
+
+/* 搜索框样式 */
+.search-box {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* 页脚样式 */
+.footer {
+  background-color: var(--dark-color);
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+}
+
+/* 借阅状态标签 */
+.badge.status-badge {
+  font-size: 0.9rem;
+  padding: 0.5rem;
+}
+
+.status-borrowed {
+  background-color: var(--primary-color);
+}
+
+.status-returned {
+  background-color: var(--success-color);
+}
+
+.status-overdue {
+  background-color: var(--danger-color);
+}
+
+.status-renewed {
+  background-color: var(--secondary-color);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .card-img-top {
+    height: 200px;
+  }
+} 
